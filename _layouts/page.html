@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
+
+  <title>{{page.title}}</title>
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="{{site.baseurl}}{{site.logo}}">
+
+  <!-- CSS  -->
+  <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/reset.css" media="all">
+  <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/basscss.min.css" media="all">
+  <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/colors.css" media="all">
+  <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/style.css" media="all">
+  <!-- <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/dashboard.css" media="all"> -->
+
+  <link href='https://fonts.googleapis.com/css?family=Roboto:400,900,400italic,700|Roboto+Condensed:300' rel='stylesheet' type='text/css'>
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300i,700" rel="stylesheet">
+  <!-- awesome icons -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+
+  <header class="top main">
+    <a class="no-text-decoration" href="{{ site.baseurl }}/">
+      <img class="top" src="{{ site.baseurl }}/images/logo/5pani2pesci-2017-white-text-200.png" alt="5pani2pesci">
+    </a>
+    <div id="logout" class="top">
+      <i class="fa fa-sign-out" aria-hidden="true"></i>
+      <!-- <button id="logout" name="logout">Logout</button> -->
+    </div>
+  </header>
+
+{% if page.image %}
+  <div class="header-image">
+    <img alt="{{page.title}} {{page.location}}" src="{{site.baseurl}}{{page.image}}" />
+  </div>
+{% endif %}
+
+
+  <div id="content">
+    <div class="page-content">
+      {{content}}
+    </div>
+  </div>
+
+  <footer class="">
+    <div class="max-width-3 mx-auto">{% include footer.html %}</div>
+  </footer>
+
+
+  <!--  Scripts-->
+  {% include firebase.html private=page.private %}
+
+  </body>
+</html>
