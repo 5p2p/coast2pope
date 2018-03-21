@@ -6,7 +6,7 @@ facebook_image: /images/splash/cover-min.jpg
 price: XX
 # youtube: https://www.youtube.com/embed/M92ctSwuV4o
 mobile: XX XX XX
-orari: da lunedì a venerdì 16.00-21.00
+orari: da lunedì a venerdì
 top-action-button: true
 layout: landing
 ---
