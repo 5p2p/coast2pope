@@ -5,8 +5,8 @@ image: /images/splash/cover-min.jpg
 facebook_image: /images/splash/cover-min.jpg
 price: XX
 # youtube: https://www.youtube.com/embed/M92ctSwuV4o
-mobile: XX XX XX
-orari: da lunedì a venerdì
+mobile: 328 411 1633
+orari: da lunedì a venerdì, 9.30 - 12.30
 top-action-button: true
 layout: landing
 ---
